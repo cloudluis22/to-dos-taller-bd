@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.done {
+  background-color: #219ebc;
+  height: 85vh;
+  border-radius: 25px 25px 25px 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.not-done {
+  background-color: #8ecae6;
+  height: 85vh;
+  border-radius: 25px 25px 25px 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tarea__check {
+  position: relative;
+  left: 7px;
+  top: 2px;
+  font-size: 25px;
+  color: #b4b4b4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tarea__check:hover {
+  cursor: pointer;
+  color: green;
 }
 
-.App-link {
-  color: #61dafb;
+.tarea__options {
+  position: relative;
+  left: 7px;
+  top: 2px;
+  font-size: 20px;
+  margin-right: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tarea__options__edit {
+  font-size: 20px;
+  color: #239fe7;
+}
+
+.tarea__options__delete {
+  font-size: 23px;
+  color: rgb(207, 0, 0);
+}
+
+.tarea__options__edit:hover {
+  cursor: pointer;
+  color: #1b83c0;
+}
+
+.tarea__options__delete:hover {
+  cursor: pointer;
+  color: rgb(170, 2, 2);
 }
